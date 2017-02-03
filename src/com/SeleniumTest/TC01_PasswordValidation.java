@@ -1,16 +1,16 @@
 package com.SeleniumTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TC01_PasswordValidation {
 
 	public static void main(String[] args) throws InterruptedException {
 		{
 			//For chrome we need to install the chromedriver.exe and give the path as mentioned below
-			System.setProperty("webdriver.chrome.driver",	System.getProperty("user.dir")+"\\src\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver",	System.getProperty("user.dir")+"\\src\\chromedriver.exe");
 			
 			// Initialize browser
-			WebDriver driver = new ChromeDriver();
+			WebDriver driver = new FirefoxDriver();
 
 			// Launch the Application
 			driver.get("http://newtours.demoaut.com/");
